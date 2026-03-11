@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=DM+Sans:wght@400;600&display=swap');
+
+:root {
+  --green: #1a3a2a;
+  --green-mid: #2d6a4f;
+  --green-light: #52b788;
+  --orange: #f4622a;
+  --cream: #fdf6ec;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  min-height: 100dvh;
+  background: var(--green);
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 9vw, 3rem);
+  color: var(--cream);
+  text-align: center;
+  line-height: 1.1;
+}
+
+h1 span { color: #ff8c42; }
+
+.subtitle {
+  text-align: center;
+  color: var(--green-light);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.4rem;
+}
+
+.card {
+  width: 100%;
+  background: var(--cream);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem 1.25rem;
+  box-shadow: 0 0 0 3px var(--orange), 0 16px 40px rgba(0,0,0,0.3);
+}
+
+#responseBody {
+  font-size: clamp(1rem, 4vw, 1.1rem);
+  line-height: 1.7;
+  color: #1a1a1a;
+  min-height: 80px;
+  transition: opacity 0.3s;
+}
+
+#responseBody.loading { opacity: 0.4; }
+
+.tag {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--green-mid);
+  color: var(--cream);
+  font-size: 0.7rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+button {
+  width: 100%;
+  min-height: 52px;
+  background: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+button:active { transform: scale(0.97); }
+button:disabled { opacity: 0.6; }
+
+@media (hover: hover) {
+  button:hover { opacity: 0.88; }
+}
+
+@media (min-width: 480px) {
+  button { width: auto; padding: 0.9rem 2.5rem; }
+}
