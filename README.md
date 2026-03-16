@@ -1,5 +1,7 @@
 # 🐾 Curious dog
 
+Acesse [Aqui](https://curious-dog.netlify.app/)
+
 Projeto desenvolvido para aprender a consumir uma API externa e manipular os dados retornados com JavaScript.
 
 ## 🎯 Objetivo
