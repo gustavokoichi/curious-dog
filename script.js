@@ -1,3 +1,23 @@
+function getDeviceInput() {
+  if (window.matchMedia('(pointer: fine)').matches) return 'mouse';
+  if (window.matchMedia('(pointer: coarse)').matches) return 'touch';
+  return 'keyboard';
+}
+
+function hasTouchscreen() {
+  return window.matchMedia('(any-pointer: coarse)').matches;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const input = getDeviceInput();
+
+  if (input === 'touch') {
+    document.getElementById('btn').textContent = 'Tap for a curiosity ✦';
+  } else {
+    document.getElementById('btn').textContent = 'Click for a curiosity ✦';
+  }
+});
+
 async function getFacts() {
   const btn = document.getElementById('btn');
   const text = document.getElementById('responseBody');
