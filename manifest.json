@@ -6,7 +6,7 @@
   "id": "/index.html",
   "display": "standalone",
   "background_color": "#1a3a2a",
-  "theme_color": "#f4622a",
+  "theme_color": "#1a3a2a",
   "orientation": "portrait",
   "categories": ["education", "entertainment"],
   "screenshots": [
