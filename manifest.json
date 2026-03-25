@@ -3,10 +3,20 @@
   "short_name": "CuriousDog",
   "description": "Curiosidades sobre cachorros",
   "start_url": "/index.html",
+  "id": "/index.html",
   "display": "standalone",
   "background_color": "#1a3a2a",
   "theme_color": "#f4622a",
   "orientation": "portrait",
+  "categories": ["education", "entertainment"],
+  "screenshots": [
+    {
+      "src": "screenshot-523-929.jpg",
+      "sizes": "532x929",
+      "type": "image/png",
+      "platform": "narrow"
+    }
+  ],
   "icons": [
     {
       "src": "icons/icon-192.png",
