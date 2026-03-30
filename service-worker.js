@@ -1,12 +1,12 @@
-const CACHE = 'cachorro-curioso-v1';
+const CACHE = 'cachorro-curioso-v2';
 const ASSETS = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/manifest.json',
-  '/icons/icon-192.png',
-  '/icons/icon-512.png'
+  '/curious-dog/',
+  '/curious-dog/index.html',
+  '/curious-dog/style.css',
+  '/curious-dog/script.js',
+  '/curious-dog/manifest.json',
+  '/curious-dog/icons/icon-192.png',
+  '/curious-dog/icons/icon-512.png'
 ];
 
 const API_URL = 'https://dogapi.dog/api/v2/facts';
